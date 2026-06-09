@@ -638,5 +638,11 @@
         </div>
 
     </div>
+    <script>
+        window.addEventListener('beforeunload', (event) => {
+            event.preventDefault();
+            event.returnValue = '';
+        });
+    </script>
 </body>
 </html>
